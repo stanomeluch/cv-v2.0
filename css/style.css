@@ -1,0 +1,611 @@
+/*basic settings*/
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  /*background*/
+
+  background: linear-gradient(
+    271deg,
+    #246655,
+    #13bb1a,
+    #bb13a6,
+    #bb1313,
+    #bb7c13,
+    #137ebb
+  );
+  background-size: 1200% 1200%;
+  -webkit-animation: AnimationName 46s ease infinite;
+  -moz-animation: AnimationName 46s ease infinite;
+  -o-animation: AnimationName 46s ease infinite;
+  animation: AnimationName 46s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*glass design*/
+
+.glassContainer {
+  height: auto;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  border-radius: 25px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.144);
+  position: relative;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* clearfix */
+
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*basic settings ends here*/
+
+/*Header-text & media*/
+
+.hero-text {
+  max-width: 50%;
+  font-size: 2em;
+  text-align: left;
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  right: 0;
+  color: white;
+  float: left;
+  display: inline;
+}
+
+.hero-text h5 {
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+  float: left;
+}
+
+.neonText {
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+}
+
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa,
+      0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+@media (max-width: 1130px) {
+  .hero-text {
+    width: 50%;
+    font-size: 1.8em;
+    top: 20%;
+    left: 14%;
+  }
+}
+
+@media (max-width: 970px) {
+  .hero-text {
+    width: 40%;
+    font-size: 1.5em;
+    top: 15%;
+    left: 10%;
+  }
+}
+@media (max-width: 860px) {
+  .hero-text {
+    width: 60%;
+    font-size: 1.5em;
+    top: 5%;
+    left: 5%;
+  }
+}
+@media (max-width: 705px) {
+  .hero-text {
+    width: 60%;
+    font-size: 1.1em;
+    top: 4%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 605px) {
+  .hero-text {
+    width: 65%;
+    font-size: 1.2em;
+    top: 4%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 570px) {
+  .hero-text {
+    width: 65%;
+    font-size: 0.9em;
+    top: 3%;
+    left: 4.5%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-text {
+    width: 65%;
+    font-size: 1em;
+    top: 3%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 490px) {
+  .hero-text {
+    width: 65%;
+    font-size: 0.9em;
+    top: 3%;
+    left: 4%;
+  }
+}
+
+@media (max-width: 437px) {
+  .hero-text {
+    width: 65%;
+    font-size: 0.7em;
+    top: 2%;
+    left: 6%;
+  }
+}
+
+@media (max-width: 390px) {
+  .hero-text {
+    width: 80%;
+    font-size: 0.6em;
+    top: 1%;
+    left: 9%;
+  }
+}
+
+/*Header-image & mediaquaries*/
+
+.profil-img {
+  max-width: 49%;
+  float: right;
+  margin-top: -8%;
+}
+@media (max-width: 1000px) {
+  .profil-img {
+    max-width: 39%;
+    margin-top: -5%;
+    margin-bottom: 2.2%;
+  }
+}
+
+@media (max-width: 850px) {
+  .profil-img {
+    max-width: 35%;
+    margin-top: -5%;
+    margin-bottom: 3.2%;
+  }
+}
+@media (max-width: 750px) {
+  .profil-img {
+    max-width: 35%;
+    margin-top: -5%;
+    margin-bottom: 4.2%;
+  }
+}
+@media (max-width: 600px) {
+  .profil-img {
+    max-width: 35%;
+    margin-top: -5%;
+    margin-bottom: 7.2%;
+  }
+}
+@media (max-width: 490px) {
+  .profil-img {
+    max-width: 30%;
+    margin-top: -5%;
+    margin-bottom: 11.2%;
+  }
+}
+
+@media (max-width: 410px) {
+  .profil-img {
+    max-width: 25%;
+    margin-top: -5%;
+    margin-bottom: 13.5%;
+  }
+}
+
+@media (max-width: 370px) {
+  .profil-img {
+    max-width: 25%;
+    margin-top: -5%;
+    margin-bottom: 16.5%;
+  }
+}
+
+/*textAbout & mediaquaries*/
+
+.textAbout {
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 1000px;
+  padding: 3%;
+  margin-top: -68px;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  background-color: rgba(252, 252, 252, 0.144);
+  position: relative;
+}
+
+@media (max-width: 1350px) {
+  .textAbout {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 700px) {
+  .textAbout {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}
+
+.textAbout p {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+}
+@media (max-width: 650px) {
+  .textAbout p {
+    font-size: 1em;
+    line-height: 1em;
+  }
+}
+
+/*Personal Info*/
+
+.textInfo li {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.3em;
+  color: beige;
+}
+
+/*General box settings and media queries*/
+.hobbiesInfo,
+.codeSkillFuture,
+.codeSkillInfo,
+.skillInfo,
+.workInfo,
+.textInfo,
+.eduInfo,
+.graf,
+.wrapFirst {
+  margin-top: 1%;
+  margin-left: 20%;
+  margin-right: 20%;
+  max-width: 1000px;
+  color: beige;
+  padding: 3%;
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  z-index: 12;
+  background-color: rgba(252, 252, 252, 0.144);
+  position: relative;
+}
+
+.hobbiesInfo {
+  margin-bottom: 8%;
+}
+
+@media (max-width: 1350px) {
+  .hobbiesInfo,
+  .codeSkillFuture,
+  .codeSkillInfo,
+  .skillInfo,
+  .workInfo,
+  .textInfo,
+  .eduInfo {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hobbiesInfo,
+  .codeSkillFuture,
+  .codeSkillInfo,
+  .skillInfo,
+  .workInfo,
+  .textInfo,
+  .eduInfo {
+    margin-right: 4%;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+}
+
+/*Work*/
+
+.textCenter {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.skillInfo h2 {
+  text-align: center;
+}
+
+.skillInfo strong,
+p {
+  display: inline;
+}
+
+.middle {
+  text-align: center;
+  margin-top: 2%;
+  letter-spacing: 0.2em;
+  line-height: 2em;
+}
+
+.codeSkillInfo h2,
+.codeSkillFuture h2,
+h5,
+.hobbiesInfo h2 {
+  text-align: center;
+}
+
+.codeSkillFuture h5 {
+  font-size: 1.1em;
+}
+
+/*First Bar*/
+
+.barFirst {
+  background: #e34f26;
+  width: 0;
+  margin: 0.25em 0;
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: width 2s, background 0.2s;
+
+  clear: both;
+}
+.barFirst:nth-of-type(2) {
+  background: #0d84ce;
+}
+.barFirst:nth-of-type(3) {
+  background: #563e7c;
+}
+.barFirst:nth-of-type(4) {
+  background: #f0e040;
+}
+.barFirst:nth-of-type(5) {
+  background: #007acc;
+}
+.barFirst:nth-of-type(6) {
+  background: #61dafb;
+}
+
+.barFirst .labelFirst {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 1em;
+  background: #3a34345e;
+  width: 7em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.countFirst {
+  position: absolute;
+  right: 0.25em;
+  top: 0.75em;
+  padding: 0.15em;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+/*End of First Bar*/
+
+/*Second Bar*/
+
+.barSecond {
+  background: #236d0d;
+  width: 0;
+  margin: 0.25em 0;
+  color: #fff;
+  position: relative;
+  transition: width 2s, background 0.2s;
+  clear: both;
+}
+.barSecond:nth-of-type(2) {
+  background: #1f11dbee;
+}
+.barSecond:nth-of-type(3) {
+  background: #bd2222ee;
+}
+.barSecond:nth-of-type(4) {
+  background: #4b2d2dee;
+}
+.barSecond:nth-of-type(5) {
+  background: #000000ee;
+}
+.barSecond:nth-of-type(6) {
+  background: #b83e9dee;
+}
+.barSecond:nth-of-type(7) {
+  background: #1158dbee;
+}
+
+.barSecond .labelSecond {
+  text-align: center;
+  font-size: 0.75em;
+  padding: 1em;
+  background: #3a34345e;
+  width: 7em;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.countSecond {
+  position: absolute;
+  right: 0.25em;
+  top: 0.75em;
+  padding: 0.15em;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+/*Button*/
+
+#button {
+  display: inline-block;
+  background-color: #ff9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*HideMe*/
+
+.hideMe {
+  opacity: 0;
+}
